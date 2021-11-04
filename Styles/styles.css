@@ -8,3 +8,57 @@
     background: yellow;
     height: 70px;
 }
+
+.content-wrapper {
+    width: 80%;
+    height: 70px;
+    background: red;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+.logo {
+    width: 10%;
+    height: 60px;
+    background: #008000;
+    border-radius: 15px;
+    margin-left: 10px;
+    float: left;
+}
+
+.logo__item {
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.main-menu {
+    width: 80%;
+    height: 60px;
+    color: royalblue;
+    text-align: right;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.main-menu__item li {
+    display: inline;
+    background: rgb(48, 162, 238);
+    padding-right: 14px;
+    border-radius: 15px;
+    padding: 14px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+.main-menu__item li a {
+    color: #fff;
+    font-size:20px;
+    text-decoration:none;
+}
+
+.main-menu__item li:hover {
+    background: seagreen;
+    border-radius: 15px;
+    padding: 14px;
+}
