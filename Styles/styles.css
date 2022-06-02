@@ -5,14 +5,14 @@
 
 .main-header {
     width: 100%;
-    background: yellow;
+    background: rgb(3, 248, 97);
     height: 70px;
 }
 
 .content-wrapper {
-    width: 80%;
+    width: 90%;
     height: 70px;
-    background: red;
+    background: rgb(0, 153, 255);
     margin: auto;
     padding-top: 5px;
     padding-bottom: 5px;
