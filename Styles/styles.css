@@ -27,18 +27,13 @@ main {
     border-radius: 10px;
 }
 .logo {
-    width: 10%;
-    height: 60px;
-    background: #008000;
-    border-radius: 15px;
+    width: 10%; 
     margin-left: 10px;
-    float: left;
 }
 
 .logo__item {
-    width: 100%;
     height: 40px;
-    padding-top: 10px;
+    border-radius: 5px;
 }
 
 .main-menu {
@@ -76,14 +71,42 @@ h1 {
 }
 
 .imh {
-    height: 500px;
+    width: 40%;
 }
 
 .imw {
-    width: 1000px;
+    width: 60%;
 }
 
 .imh,.imw {
     border-radius: 10px;
+    transition: 1s;
 }
+
+.imh:hover,.imw:hover {
+    transition: 1s;
+    transform: scale(1.03);
+}
+
+.aud {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .logo {
+        align-items: center;
+        text-align: center;
+        display: inline;
+    }
+
+    .main-menu {
+        align-items: center;
+       text-align: center;
+       display: inline;
+    }
+
+}
+  
 
