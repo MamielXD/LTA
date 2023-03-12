@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+main {
+    align-items: center;
+    text-align: center;
+    background: rgb(3, 248, 97);
+}
+
 .main-header {
     width: 100%;
     background: rgb(3, 248, 97);
@@ -18,6 +24,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 .logo {
     width: 10%;
@@ -68,7 +75,15 @@ h1 {
     text-align: center;
 }
 
-#ola {
-    width: 350px;
-    height: 370px;
+.imh {
+    height: 500px;
 }
+
+.imw {
+    width: 1000px;
+}
+
+.imh,.imw {
+    border-radius: 10px;
+}
+
