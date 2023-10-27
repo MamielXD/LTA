@@ -23,9 +23,32 @@ body {
     margin: 1%;
   }
   
+  .content-wrapper {
+    display: flex;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+    
+  }
+  
+  .logo a {
+    height: 90%;
+  }
+  
   .logo__item {
     width: 50px;
     border-radius: 10px;
+  }
+  
+  .main-menu {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 50%;
   }
   
   .main-menu__item {
