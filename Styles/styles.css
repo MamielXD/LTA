@@ -122,6 +122,12 @@ body {
 
 /* LOL */
     /* Establece los estilos para los enlaces de los elementos de la lista del menú principal */
+    
+    .content-wrapper {
+      display: inline;
+      justify-content: 
+    }
+    
     .main-menu__item li a {
     color: #fff;
     font-size: 20px;
@@ -132,6 +138,13 @@ body {
     .main-menu__item li:hover {
     background-color: rgb(0, 0, 0);
     transform: scale(1.03);
+    }
+    
+    .main-menu, .logo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     
     /* Establece los estilos para la imagen horizontal */
