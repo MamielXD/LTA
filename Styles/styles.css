@@ -78,15 +78,7 @@ body {
     max-width: 100%;
   }
   
-  .imh {
-    max-width: 400px;
-    margin: 0 auto;
-  }
   
-  .imw {
-    max-width: 600px;
-    margin: 0 auto;
-  }
   
   .aud {
     display: block;
@@ -121,13 +113,13 @@ body {
     
     /* Establece los estilos para la imagen horizontal */
     .imh {
-    width: 40%;
+    height: 40%;
     border-radius: 10px;
     }
     
     /* Establece los estilos para la imagen vertical */
     .imw {
-    width: 60%;
+    width: 80%;
     border-radius: 10px;
     }
   
