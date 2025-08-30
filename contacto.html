@@ -1,25 +1,196 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | LTA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - WhatsApp</title>
+  <style>
+    /* =====================
+       VARIABLES PERSONALIZABLES
+       ===================== */
+    :root {
+      --color-bg: #0f172a;
+      --color-card: #1e293b;
+      --color-primary: #00e676;
+      --color-secondary: #60a5fa;
+      --color-text: #f8fafc;
+      --color-muted: #94a3b8;
+      --radius: 1.2rem;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      --transition: 0.3s ease;
+    }
+
+    /* =====================
+       ESTILOS GLOBALES
+       ===================== */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: var(--color-bg);
+      color: var(--color-text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    /* =====================
+       CARD DEL FORM
+       ===================== */
+    .contact-card {
+      background: var(--color-card);
+      padding: 2rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      width: 100%;
+      max-width: 450px;
+      animation: fadeIn 1s ease;
+    }
+
+    /* =====================
+       INPUTS
+       ===================== */
+    .form-group {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    label {
+      font-size: 0.9rem;
+      color: var(--color-muted);
+      position: absolute;
+      top: -0.6rem;
+      left: 1rem;
+      background: var(--color-card);
+      padding: 0 0.3rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 1rem;
+      border-radius: var(--radius);
+      border: 2px solid transparent;
+      background: #0f172a;
+      color: var(--color-text);
+      font-size: 1rem;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    input:focus, textarea:focus {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 10px var(--color-primary);
+    }
+
+    textarea {
+      resize: none;
+      min-height: 120px;
+    }
+
+    /* =====================
+       BOTÓN WHATSAPP
+       ===================== */
+    .btn-whatsapp {
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      border-radius: var(--radius);
+      background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+      color: var(--color-bg);
+      font-weight: bold;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+    }
+
+    .btn-whatsapp:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    .btn-whatsapp:active {
+      transform: scale(0.97);
+    }
+
+    /* =====================
+       ICONO
+       ===================== */
+    .btn-whatsapp svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--color-bg);
+    }
+
+    /* =====================
+       ANIMACIONES
+       ===================== */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
-    <header class="main-header">
-		<div class="content-wrapper">
-			<nav class="main-menu">
-				<ul>
-					<li>
-						<a href="/index.html">Inicio</a>
-					</li>
-					<li>
-						<a href="/contacto.html">Contacto</a>
-					</li>
-				</ul>
-			</nav> 
-		</div>
-	</header>
+
+  <div class="contact-card">
+    <h1>Contáctame 🚀</h1>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Tu Nombre</label>
+        <input type="text" id="name" name="name" required placeholder="Escribe tu nombre">
+      </div>
+      <div class="form-group">
+        <label for="email">Tu Correo</label>
+        <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+      </div>
+      <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" required placeholder="Escribe tu mensaje aquí..."></textarea>
+      </div>
+      <button type="submit" class="btn-whatsapp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M380.9 97.1C339-2.9 211-33.4 114.6 27.6 59.6 61.1 24.4 118.2 24.4 180.1c0 28.6 7.1 57.3 20.9 82.7l-21.6 79.2 81.1-21.2c24.2 13.2 50.9 20.2 78.4 20.2 60.5 0 117.7-35.2 151.1-90.1 27.3-45.4 33.1-100.6 17-152.7zM224 338.7c-24.7 0-48.8-6.5-70.1-18.7l-4.8-2.8-48.1 12.5 12.9-47-3.1-5c-12.4-20.4-19-43.7-19-67.6 0-70.2 57.1-127.3 127.2-127.3 33.9 0 65.9 13.2 89.9 37.2 24.1 24.5 37.4 57.2 37.4 91.6s-13.3 67.2-37.4 91.6c-24 24.5-56 37.5-89.9 37.5z"/>
+        </svg>
+        Enviar a WhatsApp
+      </button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      const texto = `Hola, soy ${name} (%0A📧 ${email})%0A%0A${message}`;
+      const url = `https://wa.me/528277181818?text=${texto}`;
+
+      window.open(url, "_blank");
+    });
+  </script>
+
 </body>
 </html>
